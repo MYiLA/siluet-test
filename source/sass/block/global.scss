@@ -1,0 +1,90 @@
+// @font-face {
+//     font-family: 'Roboto'; 
+//     src: url('../fonts/roboto-light.woff2') format('woff2'),
+//     url('../fonts/roboto-light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Roboto'; 
+//   src: url('../fonts/roboto-medium.woff2') format('woff2'),
+//   url('../fonts/roboto-medium.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Roboto'; 
+//   src: url('../fonts/roboto-bold.woff2') format('woff2'),
+//   url('../fonts/roboto-bold.woff') format('woff');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+html, body {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: $mobile-width;
+  overflow-x: hidden;
+  @include text;
+}
+
+a {
+  text-decoration: none;
+  @include text;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+body {
+  background-color: $white;
+}
+
+.gray {
+  background-color: $gray;
+}
+
+.col {
+  float: left;
+}
+
+.h-100,
+.h-50 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &:nth-child(1) {
+    padding-top: 0;
+  };
+
+  &:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

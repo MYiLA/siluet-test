@@ -1,0 +1,29 @@
+.header {
+  height: 156px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__wrap {
+  height: 155px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(105, 105, 105);
+}
+
+.header__sub-wrap {
+ padding: 15px;
+ height: 100%;
+}
+
+.header__link {
+  display: block;
+
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: right;
+  color: $white;
+}

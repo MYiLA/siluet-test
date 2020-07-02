@@ -1,0 +1,18 @@
+footer.footer
+  .footer__wrap
+    .row
+      .col
+        ol.footer__list.list.list--num
+          - for (var n = 0; n < 14; n++)
+              li.list__item
+                span.list__item-num Пункт
+      .col
+        ul.footer__list.list
+          li.list__item Поисковое продвижение сайтов
+          each val in ['Старт', 'Продвижение Плюс', 'Интернет-магазин', 'Эксклюзив', 'Контекст + SEO', 'Регион']
+            li.list__item= 'Тариф «' + val + '»'
+      .col
+        .row.no-gutters.h-50
+          .col-12.gray
+        .row.no-gutters.h-50
+          .col-12.gray

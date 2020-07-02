@@ -1,0 +1,48 @@
+.index-page {
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.index-page__desc {
+  padding: 20px;
+  min-height: 470px;
+  background-color: $back-light;
+
+  p {
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.index-page__cards-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.index-page__block-7-wrap {
+  float: left;
+  height: 13%;
+}
+
+.index-page__block-7 {
+  background-color: $gray;
+  height: 130px;
+  margin-top: 20px;
+}
+
+.index-page__block-5-wrap {
+  margin-bottom: 30px;
+}
+
+.index-page__sidebar-wrap {
+  float: left;
+  height: 87%;
+}
